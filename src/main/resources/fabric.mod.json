@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "braofholding",
+  "version": "${version}",
+
+  "name": "Bra Of Holding",
+  "description": "Embrace Euphoria",
+  "authors": [
+    "DakotaPride"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/braofholding/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.dakotapride.bra_of_holding.BraOfHolding"
+    ]
+  },
+  "mixins": [
+    "braofholding.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
