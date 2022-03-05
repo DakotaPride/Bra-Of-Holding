@@ -1,5 +1,6 @@
 package net.dakotapride.bra_of_holding;
 
+import net.dakotapride.bra_of_holding.effect.BraOfHoldingEffects;
 import net.dakotapride.bra_of_holding.effect.dysphoria.DysphoriaEffect;
 import net.dakotapride.bra_of_holding.effect.euphoria.EuphoriaEffect;
 import net.dakotapride.bra_of_holding.item.BraOfHoldingItems;
@@ -15,16 +16,11 @@ public class BraOfHolding implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 
-	// Status Effects
-	public static final StatusEffect EUPHORIA = new EuphoriaEffect();
-	public static final StatusEffect DYSPHORIA = new DysphoriaEffect();
-
 	@Override
 	public void onInitialize() {
 
 		// Status Effects
-		Registry.register(Registry.STATUS_EFFECT, new Identifier("braofholding", "euphoria"), EUPHORIA);
-		Registry.register(Registry.STATUS_EFFECT, new Identifier("braofholding", "dysphoria"), DYSPHORIA);
+		BraOfHoldingEffects.BraOfHoldingStatusEffects();
 
 		// Items
 		BraOfHoldingItems.registerBraOfHoldingItems();

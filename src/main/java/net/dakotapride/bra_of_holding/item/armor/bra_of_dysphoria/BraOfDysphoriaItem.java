@@ -2,6 +2,7 @@ package net.dakotapride.bra_of_holding.item.armor.bra_of_dysphoria;
 
 import com.google.common.collect.ImmutableMap;
 import net.dakotapride.bra_of_holding.BraOfHolding;
+import net.dakotapride.bra_of_holding.effect.BraOfHoldingEffects;
 import net.dakotapride.bra_of_holding.item.armor.BraOfHoldingArmorMaterials;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
@@ -18,7 +19,7 @@ public class BraOfDysphoriaItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(BraOfHoldingArmorMaterials.BRA_OF_DYSPHORIA,
-                            new StatusEffectInstance(BraOfHolding.DYSPHORIA, 400, 0)).build();
+                            new StatusEffectInstance(BraOfHoldingEffects.DYSPHORIA, 20, 0)).build();
 
     public BraOfDysphoriaItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
