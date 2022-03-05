@@ -18,7 +18,7 @@ public class BraOfHoldingItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(BraOfHoldingArmorMaterials.BRA_OF_HOLDING,
-                            new StatusEffectInstance(BraOfHolding.EUPHORIA, 400, 1)).build();
+                            new StatusEffectInstance(BraOfHolding.EUPHORIA, 400, 0)).build();
 
     public BraOfHoldingItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
