@@ -11,7 +11,7 @@ public class BraOfHoldingEffects {
     public static final StatusEffect EUPHORIA = new EuphoriaEffect();
     public static final StatusEffect DYSPHORIA = new DysphoriaEffect();
 
-    public static void BraOfHoldingStatusEffects() {
+    public static void registerBraOfHoldingStatusEffects() {
         Registry.register(Registry.STATUS_EFFECT, new Identifier("braofholding", "euphoria"), EUPHORIA);
         Registry.register(Registry.STATUS_EFFECT, new Identifier("braofholding", "dysphoria"), DYSPHORIA);
     }

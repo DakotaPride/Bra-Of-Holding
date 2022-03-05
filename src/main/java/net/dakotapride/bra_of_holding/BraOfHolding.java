@@ -4,6 +4,7 @@ import net.dakotapride.bra_of_holding.effect.BraOfHoldingEffects;
 import net.dakotapride.bra_of_holding.effect.dysphoria.DysphoriaEffect;
 import net.dakotapride.bra_of_holding.effect.euphoria.EuphoriaEffect;
 import net.dakotapride.bra_of_holding.item.BraOfHoldingItems;
+import net.dakotapride.bra_of_holding.item.painting.BraOfHoldingPaintings;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.util.Identifier;
@@ -20,10 +21,12 @@ public class BraOfHolding implements ModInitializer {
 	public void onInitialize() {
 
 		// Status Effects
-		BraOfHoldingEffects.BraOfHoldingStatusEffects();
+		BraOfHoldingEffects.registerBraOfHoldingStatusEffects();
 
 		// Items
 		BraOfHoldingItems.registerBraOfHoldingItems();
+		// Paintings
+		BraOfHoldingPaintings.registerBraOfHoldingPaintings();
 
 	}
 }
