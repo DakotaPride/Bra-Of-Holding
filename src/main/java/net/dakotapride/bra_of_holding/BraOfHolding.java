@@ -30,5 +30,7 @@ public class BraOfHolding implements ModInitializer {
 		// Tags
 		BraOfHoldingTags.registerBraOfHoldingTags();
 
+
+
 	}
 }

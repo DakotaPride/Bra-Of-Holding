@@ -2,33 +2,42 @@ package net.dakotapride.bra_of_holding.potion;
 
 import net.dakotapride.bra_of_holding.BraOfHolding;
 import net.dakotapride.bra_of_holding.effect.BraOfHoldingEffects;
+import net.dakotapride.bra_of_holding.mixin.BrewingRecipeRegistryMixin;
+import net.dakotapride.bra_of_holding.tag.BraOfHoldingTags;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.Items;
 import net.minecraft.potion.Potion;
+import net.minecraft.potion.Potions;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class BraOfHoldingPotions {
-    public static final Potion EUPHORIA = register
-            ("euphoria", new Potion(new StatusEffectInstance[] { new StatusEffectInstance(BraOfHoldingEffects.EUPHORIA, 3600) })),
-            LONG_EUPHORIA = register
-                    ("long_euphoria", new Potion("euphoria", new StatusEffectInstance[] { new StatusEffectInstance(BraOfHoldingEffects.EUPHORIA, 9600) })),
-            STRONG_EUPHORIA = register
-                    ("strong_euphoria", new Potion("euphoria", new StatusEffectInstance[] { new StatusEffectInstance(BraOfHoldingEffects.EUPHORIA, 1800, 1) })),
-            DYSPHORIA = register
-                    ("dysphoria", new Potion(new StatusEffectInstance[] { new StatusEffectInstance(BraOfHoldingEffects.DYSPHORIA, 3600) })),
-            LONG_DYSPHORIA = register
-                    ("long_dysphoria", new Potion("dysphoria", new StatusEffectInstance[] { new StatusEffectInstance(BraOfHoldingEffects.DYSPHORIA, 9600) })),
-            STRONG_DYSPHORIA = register
-                    ("strong_dysphoria", new Potion("dysphoria", new StatusEffectInstance[] { new StatusEffectInstance(BraOfHoldingEffects.DYSPHORIA, 1800, 1) }));
+    public static Potion EUPHORIA_POTION;
+    public static Potion DYSPHORIA_POTION;
 
+    public static Potion registerEuphoriaPotion(String name) {
+        return Registry.register(Registry.POTION, new Identifier(BraOfHolding.MOD_ID, name),
+                new Potion(new StatusEffectInstance(BraOfHoldingEffects.EUPHORIA, 200, 0)));
+    }
 
-
-
-    private static Potion register(String name, Potion potion) {
-        return Registry.<Potion>register(Registry.POTION, name, potion);
+    public static Potion registerDysphoriaPotion(String name) {
+        return Registry.register(Registry.POTION, new Identifier(BraOfHolding.MOD_ID, name),
+                new Potion(new StatusEffectInstance(BraOfHoldingEffects.DYSPHORIA, 200, 0)));
     }
 
     public static void registerBraOfHoldingPotions() {
-        BraOfHolding.LOGGER.info("Registering Mod Potions for " + BraOfHolding.MOD_ID);
+        EUPHORIA_POTION = registerEuphoriaPotion("euphoria_potion");
+        DYSPHORIA_POTION = registerDysphoriaPotion("dysphoria_potion");
+
+
+        registerBraOfHoldingPotionRecipes();
+    }
+
+    public static void registerBraOfHoldingPotionRecipes() {
+        BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.AWKWARD, Items.DANDELION,
+                BraOfHoldingPotions.EUPHORIA_POTION);
+        BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.AWKWARD, Items.ROTTEN_FLESH,
+                BraOfHoldingPotions.DYSPHORIA_POTION);
     }
 }

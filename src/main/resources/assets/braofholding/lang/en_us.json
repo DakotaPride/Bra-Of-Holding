@@ -5,12 +5,10 @@
   "item.braofholding.bra_of_dysphoria": "Bra Of Dysphoria",
   "item.braofholding.decayed_diamond": "Decayed Diamond",
   "itemGroup.braofholding.bra_of_holding": "Bra Of Holding",
-  "item.minecraft.potion.effect.euphoria": "Potion Of Euphoria",
-  "item.minecraft.splash_potion.effect.euphoria": "Splash Potion Of Euphoria",
-  "item.minecraft.tipped_arrow.effect.euphoria": "Tipped Arrow Of Euphoria",
-  "item.minecraft.lingering_potion.effect.euphoria": "Lingering Potion Of Euphoria",
-  "item.minecraft.potion.effect.dysphoria": "Potion Of Dysphoria",
-  "item.minecraft.splash_potion.effect.dysphoria": "Splash Potion Of Dysphoria",
-  "item.minecraft.tipped_arrow.effect.dysphoria": "Tipped Arrow Of Dysphoria",
-  "item.minecraft.lingering_potion.effect.dysphoria": "Lingering Potion Of Dysphoria"
+  "item.minecraft.potion.effect.euphoria_potion": "Euphoria Potion",
+  "item.minecraft.splash_potion.effect.euphoria_potion": "Splash Potion of Euphoria",
+  "item.minecraft.lingering_potion.effect.euphoria_potion": "Lingering Potion of Euphoria",
+  "item.minecraft.potion.effect.dysphoria_potion": "Dysphoria Potion",
+  "item.minecraft.splash_potion.effect.dysphoria_potion": "Splash Potion of Dysphoria",
+  "item.minecraft.lingering_potion.effect.dysphoria_potion": "Lingering Potion of Dysphoria"
 }
