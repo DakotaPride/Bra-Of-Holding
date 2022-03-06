@@ -13,7 +13,17 @@ public class BraOfHoldingPotions {
             LONG_EUPHORIA = register
                     ("long_euphoria", new Potion("euphoria", new StatusEffectInstance[] { new StatusEffectInstance(BraOfHoldingEffects.EUPHORIA, 9600) })),
             STRONG_EUPHORIA = register
-                    ("strong_euphoria", new Potion("euphoria", new StatusEffectInstance[] { new StatusEffectInstance(BraOfHoldingEffects.EUPHORIA, 1800, 1) }));
+                    ("strong_euphoria", new Potion("euphoria", new StatusEffectInstance[] { new StatusEffectInstance(BraOfHoldingEffects.EUPHORIA, 1800, 1) })),
+            DYSPHORIA = register
+                    ("dysphoria", new Potion(new StatusEffectInstance[] { new StatusEffectInstance(BraOfHoldingEffects.DYSPHORIA, 3600) })),
+            LONG_DYSPHORIA = register
+                    ("long_dysphoria", new Potion("dysphoria", new StatusEffectInstance[] { new StatusEffectInstance(BraOfHoldingEffects.DYSPHORIA, 9600) })),
+            STRONG_DYSPHORIA = register
+                    ("strong_dysphoria", new Potion("dysphoria", new StatusEffectInstance[] { new StatusEffectInstance(BraOfHoldingEffects.DYSPHORIA, 1800, 1) }));
+
+
+
+
     private static Potion register(String name, Potion potion) {
         return Registry.<Potion>register(Registry.POTION, name, potion);
     }

@@ -4,9 +4,9 @@
     "potion": "minecraft:awkward"
   },
   "ingredient": {
-    "item": "minecraft:dandelion"
+    "tag": "c:dysphoric"
   },
   "result": {
-    "potion": "minecraft:euphoria"
+    "potion": "minecraft:dysphoria"
   }
 }

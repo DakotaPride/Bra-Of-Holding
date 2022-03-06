@@ -1,0 +1,12 @@
+{
+  "type": "nbtcrafting:brewing",
+  "base": {
+    "potion": "minecraft:dysphoria"
+  },
+  "ingredient": {
+    "item": "minecraft:glowstone"
+  },
+  "result": {
+    "potion": "minecraft:strong_dysphoria"
+  }
+}

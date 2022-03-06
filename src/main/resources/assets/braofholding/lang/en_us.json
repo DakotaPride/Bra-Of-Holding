@@ -8,5 +8,9 @@
   "item.minecraft.potion.effect.euphoria": "Potion Of Euphoria",
   "item.minecraft.splash_potion.effect.euphoria": "Splash Potion Of Euphoria",
   "item.minecraft.tipped_arrow.effect.euphoria": "Tipped Arrow Of Euphoria",
-  "item.minecraft.lingering_potion.effect.euphoria": "Lingering Potion Of Euphoria"
+  "item.minecraft.lingering_potion.effect.euphoria": "Lingering Potion Of Euphoria",
+  "item.minecraft.potion.effect.dysphoria": "Potion Of Dysphoria",
+  "item.minecraft.splash_potion.effect.dysphoria": "Splash Potion Of Dysphoria",
+  "item.minecraft.tipped_arrow.effect.dysphoria": "Tipped Arrow Of Dysphoria",
+  "item.minecraft.lingering_potion.effect.dysphoria": "Lingering Potion Of Dysphoria"
 }
