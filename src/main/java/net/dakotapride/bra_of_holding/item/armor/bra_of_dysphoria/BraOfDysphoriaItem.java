@@ -71,7 +71,12 @@ public class BraOfDysphoriaItem extends ArmorItem {
         return !breastplate.isEmpty();
     }
 
-    private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
+    private <Player> boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
+        for (ItemStack armorStack: player.getInventory().armor) {
+            if(!(armorStack.getItem() instanceof ArmorItem)) {
+                return true;
+            }
+        }
         ArmorItem breastplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
 
         return breastplate.getMaterial() == material;

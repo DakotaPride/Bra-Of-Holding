@@ -71,6 +71,11 @@ public class BraOfHoldingItem extends ArmorItem {
     }
 
     private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
+        for (ItemStack armorStack: player.getInventory().armor) {
+            if(!(armorStack.getItem() instanceof ArmorItem)) {
+                return true;
+            }
+        }
         ArmorItem breastplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
 
 
