@@ -7,8 +7,8 @@ import net.dakotapride.bra_of_holding.item.armor.bra_of_holding.BraOfHoldingItem
 import net.dakotapride.bra_of_holding.item.group.BraOfHoldingItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
