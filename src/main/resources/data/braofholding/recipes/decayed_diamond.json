@@ -1,16 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "#P"
-  ],
-  "key": {
-    "#": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "minecraft:diamond"
     },
-    "P": {
-      "tag": "braofholding:dysphoric"
+    {
+      "tag": "c:dysphoric"
     }
-  },
+      ],
   "result": {
     "item": "braofholding:decayed_diamond",
     "count": 1

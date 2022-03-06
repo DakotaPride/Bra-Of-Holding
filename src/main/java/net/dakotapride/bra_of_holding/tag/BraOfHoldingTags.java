@@ -17,11 +17,10 @@ public class BraOfHoldingTags {
 
     public static class Items {
 
-        public static final Tag.Identified<Item> DYSPHORIC = createTag("dysphoric");
+        public static final Tag.Identified<Item> DYSPHORIC = createCommonTag("dysphoric");
 
-
-        private static Tag.Identified<Item> createTag(String name) {
-            return TagFactory.ITEM.create(new Identifier(BraOfHolding.MOD_ID, name));
+        private static Tag.Identified<Item> createCommonTag(String name) {
+            return TagFactory.ITEM.create(new Identifier("c", name));
         }
     }
 
