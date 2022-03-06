@@ -1,0 +1,12 @@
+{
+  "type": "nbtcrafting:brewing",
+  "base": {
+    "potion": "minecraft:euphoria"
+  },
+  "ingredient": {
+    "item": "minecraft:glowstone"
+  },
+  "result": {
+    "potion": "minecraft:strong_euphoria"
+  }
+}

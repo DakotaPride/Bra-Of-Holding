@@ -14,7 +14,6 @@ public class BraOfHoldingPotions {
                     ("long_euphoria", new Potion("euphoria", new StatusEffectInstance[] { new StatusEffectInstance(BraOfHoldingEffects.EUPHORIA, 9600) })),
             STRONG_EUPHORIA = register
                     ("strong_euphoria", new Potion("euphoria", new StatusEffectInstance[] { new StatusEffectInstance(BraOfHoldingEffects.EUPHORIA, 1800, 1) }));
-
     private static Potion register(String name, Potion potion) {
         return Registry.<Potion>register(Registry.POTION, name, potion);
     }
