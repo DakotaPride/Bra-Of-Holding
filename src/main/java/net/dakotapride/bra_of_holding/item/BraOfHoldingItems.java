@@ -22,6 +22,9 @@ public class BraOfHoldingItems {
             new BraOfDysphoriaItem(BraOfHoldingArmorMaterials.BRA_OF_DYSPHORIA, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(BraOfHoldingItemGroup.BraOfHoldingItemGroup)));
 
+    public static final Item DECAYED_DIAMOND = registerItem("decayed_diamond",
+            new Item(new FabricItemSettings().group(BraOfHoldingItemGroup.BraOfHoldingItemGroup)));
+
 
     private static Item registerItem (String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(BraOfHolding.MOD_ID, name), item);

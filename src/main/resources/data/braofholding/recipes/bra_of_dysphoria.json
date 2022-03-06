@@ -9,14 +9,14 @@
       "item": "minecraft:rabbit_hide"
     },
     "D": {
-      "item": "minecraft:diamond"
+      "item": "braofholding:decayed_diamond"
     },
     "C": {
       "item": "minecraft:string"
     }
   },
   "result": {
-    "item": "braofholding:bra_of_holding",
+    "item": "braofholding:bra_of_dysphoria",
     "count": 1
   }
 }

@@ -1,22 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "# #",
-    "CDC"
+    "#P"
   ],
   "key": {
     "#": {
-      "item": "minecraft:rabbit_hide"
-    },
-    "D": {
       "item": "minecraft:diamond"
     },
-    "C": {
-      "item": "minecraft:string"
+    "P": {
+      "tag": "braofholding:dysphoric"
     }
   },
   "result": {
-    "item": "braofholding:bra_of_holding",
+    "item": "braofholding:decayed_diamond",
     "count": 1
   }
 }

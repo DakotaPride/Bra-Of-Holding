@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:nether_wart",
+    "minecraft:rotten_flesh",
+    "minecraft:nether_wart_block",
+    "minecraft:warped_wart_block",
+    "minecraft:dead_bush",
+    "minecraft:wither_rose",
+    "minecraft:hanging_roots",
+    "minecraft:vine",
+    "minecraft:glow_lichen",
+    "minecraft:gunpowder",
+    "minecraft:poisonous_potato",
+    "minecraft:phantom_membrane"
+    ]
+}
