@@ -15,11 +15,11 @@ import net.minecraft.util.registry.Registry;
 public class BraOfHoldingItems {
 
     public static final Item BRA_OF_HOLDING = registerItem("bra_of_holding",
-            new BraOfHoldingItem(BraOfHoldingArmorMaterials.BRA_OF_HOLDING, EquipmentSlot.CHEST,
+            new ArmorItem(BraOfHoldingArmorMaterials.BRA_OF_HOLDING, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(BraOfHoldingItemGroup.BraOfHoldingItemGroup)));
 
     public static final Item BRA_OF_DYSPHORIA = registerItem("bra_of_dysphoria",
-            new BraOfDysphoriaItem(BraOfHoldingArmorMaterials.BRA_OF_DYSPHORIA, EquipmentSlot.CHEST,
+            new ArmorItem(BraOfHoldingArmorMaterials.BRA_OF_DYSPHORIA, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(BraOfHoldingItemGroup.BraOfHoldingItemGroup)));
 
     public static final Item DECAYED_DIAMOND = registerItem("decayed_diamond",

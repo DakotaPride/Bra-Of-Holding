@@ -4,5 +4,9 @@
   "item.braofholding.bra_of_holding": "Bra Of Holding",
   "item.braofholding.bra_of_dysphoria": "Bra Of Dysphoria",
   "item.braofholding.decayed_diamond": "Decayed Diamond",
-  "itemGroup.braofholding.bra_of_holding": "Bra Of Holding"
+  "itemGroup.braofholding.bra_of_holding": "Bra Of Holding",
+  "item.minecraft.potion.effect.euphoria": "Potion Of Euphoria",
+  "item.minecraft.splash_potion.effect.euphoria": "Splash PotionEuphoria",
+  "item.minecraft.tipped_arrow.effect.euphoria": "Tipped Arrow Of Euphoria",
+  "item.minecraft.lingering_potion.effect.euphoria": "Lingering Potion Of Euphoria"
 }
