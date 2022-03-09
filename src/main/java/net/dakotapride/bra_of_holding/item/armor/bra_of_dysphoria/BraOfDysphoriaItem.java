@@ -4,22 +4,30 @@ import com.google.common.collect.ImmutableMap;
 import net.dakotapride.bra_of_holding.BraOfHolding;
 import net.dakotapride.bra_of_holding.effect.BraOfHoldingEffects;
 import net.dakotapride.bra_of_holding.item.armor.BraOfHoldingArmorMaterials;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraft.text.LiteralText;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.Map;
 
 public class BraOfDysphoriaItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(BraOfHoldingArmorMaterials.BRA_OF_DYSPHORIA,
-                            new StatusEffectInstance(BraOfHoldingEffects.DYSPHORIA, 1000, 0)).build();
+                            new StatusEffectInstance(BraOfHoldingEffects.DYSPHORIA, 100, 0)).build();
 
     public BraOfDysphoriaItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
@@ -67,16 +75,10 @@ public class BraOfDysphoriaItem extends ArmorItem {
     private boolean hasFullSuitOfArmorOn(PlayerEntity player) {
         ItemStack breastplate = player.getInventory().getArmorStack(2);
 
-
         return !breastplate.isEmpty();
     }
 
-    private <Player> boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
-        for (ItemStack armorStack: player.getInventory().armor) {
-            if(!(armorStack.getItem() instanceof ArmorItem)) {
-                return true;
-            }
-        }
+    private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
         ArmorItem breastplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
 
         return breastplate.getMaterial() == material;
